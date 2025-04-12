@@ -36,6 +36,7 @@ public class Starend {
                 写成了 start >= 0  end <= nums.length - 1
                 这样会越界，导致假如有的范围在0位，start-- 变-1了
                 有的end在num.length - 1位，end++变num.length越界
+          第二次错误：应该把start > 0 和 end < nums.length - 1现在&&前头，然后后边用start - 1 和 end + 1
      */
     public int[] searchRange(int[] nums, int target) {
         int left = 0;
