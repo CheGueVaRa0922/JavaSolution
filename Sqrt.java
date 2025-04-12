@@ -35,6 +35,7 @@ public class Sqrt {
                 一代入，发现最后算数平凡根都等于right
             错误：
                 注意mid * mid 可能会很大，所以利用long防止过大
+                第二次犯错：还是没用long
      */
     public int mySqrt(int x) {
         int left = 0;
